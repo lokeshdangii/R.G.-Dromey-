@@ -12,5 +12,8 @@ while i<j:
         a[i],a[j] = a[j],a[i]
         i = i+1
         j = j-1
+# to ensure that j holds the partition index(p such that a[i] <= x for all i<=p and a[j]>x for all j>p)
+if a[j] < x:
+    j = j-1
 
 print("Array : ",a)
